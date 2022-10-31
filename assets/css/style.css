@@ -210,7 +210,6 @@
   height: 32px;
   display: flex;
   align-items: center;
-
 }
 .suggest ion-icon {
   font-size: 20px;
@@ -420,13 +419,12 @@
   flex: 1;
 }
 
-
-.option{
+.option {
   margin-top: 56px;
   margin-left: 240px;
 }
 
-.all-option{
+.all-option {
   height: 56px;
   overflow: hidden;
   display: flex;
@@ -435,6 +433,7 @@
   position: fixed;
   background-color: white;
   z-index: 1;
+  width: 90%;
 }
 .all-option > ul {
   display: flex;
@@ -460,7 +459,6 @@
   color: white;
 }
 
-
 /* video */
 .video-youtube {
   position: relative;
@@ -470,20 +468,21 @@
   gap: 16px;
   padding-top: 80px;
 }
-.video1{
+.video1 {
   width: 295px;
   height: 300px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
 }
-.video1:hover{
+.video1:hover {
   cursor: pointer;
-}.video1:active{
+}
+.video1:active {
   background-color: #ccc;
 }
 .video1 img {
-  width: 295px;
+  width: 100%;
   height: 166px;
   border-radius: 10px;
 }
@@ -498,21 +497,19 @@
   display: flex;
   flex: 1;
 }
-.description1 .video-info{
+.description1 .video-info {
   flex: 1;
 }
-.video-info .name{
+.video-info .name {
   height: 40px;
   font-weight: 600;
-  font-size: 16px;
   overflow: hidden;
   word-wrap: break-word;
-  text-overflow: ellipsis;
 }
-.video-info .video-info-description{
+.video-info .video-info-description {
   margin-top: 6px;
   font-size: 14px;
 }
-.video-info-description .author{
+.video-info-description .author {
   margin-bottom: 4px;
 }

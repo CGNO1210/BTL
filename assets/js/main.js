@@ -1,19 +1,29 @@
 //menu
 var click = document.querySelector(".sidebar");
 var click2 = document.querySelector(".sidebar2");
-
+var click3 = document.querySelector(".option");
 document.querySelector(".menu-icon1").onclick = () => {
   if (click.className.includes("hide")) {
     //hiện siderbar
     click.classList.remove("hide");
     click2.classList.add("hide");
+    click3.style['margin-left'] = '240px'
+    document.querySelectorAll('.video1').forEach((video) =>{
+      video.style.width = '295px'
+      video.querySelector('img').style.height = '166px'
+    })
 
-
-  } else {
+  } 
+  else {
     //hiện sidebar2
     click.classList.add("hide");
     click2.classList.remove("hide");
-    
+    click3.style['margin-left'] = '72px'
+    document.querySelectorAll('.video1').forEach((video) =>{
+      video.style.width = '338px'
+      video.querySelector('img').style.height = '190px'
+    })
+
   }
 };
 
